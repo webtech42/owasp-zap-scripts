@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  zaproxy:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: zaproxy:local
+    ports:
+      - "8090:8090"
